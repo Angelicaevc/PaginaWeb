@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth; 
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:white;
+}
+
+h2{
+    color: yellowgreen;
+    text-align:center;
+    font-size: 24pt;
+}
+#contenedor{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#navegador{
+    display:flex; 
+    justify-content:space-between;
+    height: 50px;
+    background:#4584; 
+    line-height: 50px;
+    position:fixed;
+}
+#navegador ul{
+
+    padding-left: 60%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+#navegador ul li{
+    display: block;
+    width: 120px;
+    float: left;
+    text-align: center;
+}
+#navegador ul li a{
+    display: block;
+    color:rgb(72, 136, 133);
+    text-align: center;
+    text-decoration:none;
+}
+#navegador ul li a:hover{
+    background:#585858;
+    color:#fff; 
+}
+.imagen-izquierda{
+    margin-left: 3%;
+    width: 170px;
+    height: 170px;
+    border-radius:100%;
+    border:5px;
+    float:left;
+    margin-right:2%;
+}
+#cabecera{
+    background-image:url(../img/img3.png);
+    height: 250px;
+    width: 100%;
+    background-size: 100% 100%;
+    margin-bottom: -20px;
+}
+#cabecera img{
+    margin: 10px auto;
+    display: table;
+    float: left;
+}
+#cabecera h1{
+    line-height: 150px;
+    font-size:45pt;
+    text-align: center;
+    float:left;
+    margin-left: 2%;
+}
+#patrimonios{
+    padding: 25px 0;
+    height:220px;
+    width:100%;
+    background-size:100% 100%;
+    background:rgb(226, 226, 226);
+    text-align:center;
+   
+}
+#patrimonios p{
+    width:25%;
+    text-align:center;
+    color: #000;
+    padding-top:3%;
+    padding-left:6%;
+    padding-right:0%;
+    display:block;
+    float:left;
+}
+#patrimonios h4{
+    width:25%;
+    text-align:center;
+    padding-top:3%;
+    padding-left:6%;
+    padding-right:0%;
+    font-size: 14pt;
+    display:inline-block;
+    vertical-align:middle; 
+    color:darkgreen;
+}
+#turismo{
+    width:100%;
+    padding: 20px 0;
+}
+#turismo h2{
+    margin-right:20%;
+    margin-top: 20px;
+}
+#turismo p{
+    width:90%;
+    padding: 20px 0;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    font-size: 15pt;
+
+}
+.justificada{
+    text-align:justify;
+}
+#destinos{
+    width:100%;
+    height: 400px;
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+#destinos h4{
+    width:25%;
+    text-align:center;
+    padding-top:3%;
+    padding-left:6%;
+    padding-right:0%;
+    font-size: 14pt;
+    display:inline-block;
+    vertical-align:middle; 
+    color:darkgreen;
+}
+#destinos img{
+    width: 25%;
+    display: block;
+    float: left;
+    padding-left: 6%;
+    padding-top: 3%;
+    padding-right: 0%;
+
+}
+#galeria{
+    padding: 10px 0;
+    height:450px;
+    width:100%;
+    background:rgb(226, 226, 226);
+    background-size:100% 100%;
+    text-align:center;
+}
+#galeria img{
+    width:25%;
+    text-align:center;
+    padding-top:3%;
+    padding-left:6%;
+    padding-right:0%;
+}
+.imagen{
+    float:left;
+    width: 150px;
+    height: 150px;
+}
+#mapa{
+    height: 300px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+#contactos{
+    padding:10px 0;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin-top: 0%;
+    z-index: 0;
+    color: #000;
+}
+
+#capa{
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    border: 1px solid black;
+    opacity: 0.3;
+    filter: alpha(opacity=90);
+    position: relative;
+    margin-top: -300px;
+}
+#capa h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+.input{
+    width: 500px;
+    height: 30px;
+    margin-bottom: 20px;
+    color: black;
+    float: right;
+    margin-right: 20px;
+}
+.textarea{
+    width: 500px;
+    color: black;
+    float: none;
+}
+.button{
+    width: 500px;
+    color: black;
+    float: none;
+}
+#pie{
+    height: 45px;
+    width: 100%;
+    color: darkgrey;
+    padding-top: 2%;
+    text-align: center;
+    color: #000;
+}
+@media(max-width: 700px){
+    #navegador{
+        display:block; 
+        border-bottom: 0px;
+        height: auto;
+    }
+    #navegador ul{
+        border-bottom: 1px;
+        height: 30px;
+    }
+}
+@media(max-width: 400px){
+    #navegador{
+        display:block; 
+        border-bottom: 0px;
+        height: auto;
+    }
+    #navegador ul{
+        border-bottom: 1px;
+        height: 20px;
+    }
+}
